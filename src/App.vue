@@ -2,7 +2,7 @@
   <b-container>
   	<b-row>
 	  	<b-col md="6">
-			  <Cadastro />
+				<Cadastro />
 	  	</b-col>
 			<b-col md="6">
 			  <Procedure />
