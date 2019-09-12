@@ -1,13 +1,13 @@
 <template>
   <b-container>
-  	<div class="row">
-	  	<div class="col-md-6">
+  	<b-row>
+	  	<b-col md="6">
 			  <Cadastro />
-	  	</div>
-			<div class="col-md-6">
+	  	</b-col>
+			<b-col md="6">
 			  <Procedure />
-			</div>
-		</div>
+			</b-col>
+		</b-row>
   </b-container>
 </template>
 
