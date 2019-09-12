@@ -1,0 +1,6 @@
+procedure: melhor gerenciamento do trafego de dados no banco de dados
+function: um bloco de comandos que são executados na chamada da função
+triggers: bloco de comandos (função)_ que e disparada quando a alguma ação relacionado a banco de dados
+views: tabela virtual
+jobs: auxilia na manuteção de tarefas que são executadas diversas vezes
+sequence: gera valores altomatico exemplo: id 
