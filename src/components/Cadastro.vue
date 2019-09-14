@@ -1,5 +1,5 @@
 <template>
-	<b-container id="cadastro" class="w-50 m-auto">
+  <b-container id="cadastro" class="m-auto">
     <b-form action="registro.php" class="formulario">
     <p class="text-danger h3">Realizar uma inscrição</p>
       <Registro nome="Nome completo* ">
@@ -26,7 +26,7 @@ export default {
   name: 'cadastro',
 
   components: {
-  	Registro
+    Registro
   },
 
   methods: {

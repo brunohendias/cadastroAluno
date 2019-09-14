@@ -1,8 +1,8 @@
 <template>
-	<div>
-		<label>{{nome}}</label>
-		<slot></slot>
-	</div>
+  <div>
+    <label>{{nome}}</label>
+    <slot></slot>
+  </div>
 </template>
 
 <script>
