@@ -1,6 +1,6 @@
 <template>
   <div>
-    <label>{{nome}}</label>
+    <label>{{nome }}</label>
     <slot></slot>
   </div>
 </template>
