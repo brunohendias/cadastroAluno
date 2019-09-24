@@ -50,7 +50,7 @@ export default {
 
   data() {
     return {
-    	user: {
+	user: {
         name: '',
         email: '',
         tell: null

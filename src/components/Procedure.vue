@@ -3,7 +3,7 @@
     <h1 class="my-4 text-center">Procedure</h1>
     <b-form class="m-auto" inline>
       <Registro class="w-50" nome="Nome">
-	      <b-form-input class="w-100" type="text" v-model="dados_aluno.nome" />
+	<b-form-input class="w-100" type="text" v-model="dados_aluno.nome" />
       </Registro>
       <Registro class="w-50" nome="CPF">
         <b-form-input class="w-100" type="text" v-mask="'###.###.###-##'" v-model="dados_aluno.cpf" />
@@ -11,8 +11,8 @@
       <Registro class="w-25 p-2" v-for="i in 6" :nome="'Nota ' + i">
         <b-form-input class="w-100" type="text" maxlength="5" v-model="dados_aluno.notas[i-1]" />
       </Registro>
-      <Registro class="w-50" nome="Media: ">
-        <b-form-input type="text" class="w-100" readonly :value="dados_aluno.media.toFixed(2) + ' ' + resultado" :class="corResultado" />
+      <Registro class="w-50" nome="Media:">
+        <b-form-input class="w-100" type="text" readonly :value="dados_aluno.media.toFixed(2) + ' ' + resultado" :class="corResultado" />
       </Registro>
       <b-button class="my-3" @click="calcularMedia()">Calcular Media</b-button>
     </b-form>
@@ -33,11 +33,11 @@ export default {
   methods: {
     calcularMedia(){
       if(this.dados_aluno.notas != ''){
-	      for(let i=0;i < this.dados_aluno.notas.length;i++){
+	for(let i=0;i < this.dados_aluno.notas.length;i++){
           this.dados_aluno.notas[i].replace(",", ".")
-	        this.total += parseFloat(this.dados_aluno.notas[i])
-	      }
-	      this.dados_aluno.media = this.total / this.dados_aluno.notas.length
+	  this.total += parseFloat(this.dados_aluno.notas[i])
+	}
+	this.dados_aluno.media = this.total / this.dados_aluno.notas.length
         if(this.dados_aluno.media >= 5){
           this.corResultado = 'text-success'
           this.resultado = 'Aprovado'
@@ -56,14 +56,14 @@ export default {
   data() {
     return {
       dados_aluno: {
-	      nome: '',
-	      cpf: '',
-	      notas: [],
-	      media: 0
+	nome: '',
+	cpf: '',
+	notas: [],
+	media: 0
       },
       total: 0,
       corResultado: '',
-      resultado: '',
+      resultado: ''
     };
   },
 };

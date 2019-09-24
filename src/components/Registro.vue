@@ -8,6 +8,6 @@
 <script>
 export default {
   name: 'Registro',
-  props: ['nome'],
+  props: ['nome']
 };
 </script>
